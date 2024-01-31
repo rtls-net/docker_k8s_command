@@ -5,3 +5,9 @@
 Get Docker Info 
 
  ```Docker info```
+
+## sync minikube with docker
+
+   eval $(minikube docker-env)
+
+   
