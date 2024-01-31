@@ -20,6 +20,12 @@ Get Docker Info
 
  kubectl get nodes
 
+ kubectl get deployments
+
+ kubectl get replicaset
+
+kubectl scale --replicas=1 deployment finance-ui-app-deployment
+
  ### minikube command
 
  minikube start
