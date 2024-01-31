@@ -2,7 +2,9 @@
 
 ### Docker command
 
-docker images
+```docker images```
+
+```docker build -t sampleapp:latest .```
 
 Get Docker Info 
 
