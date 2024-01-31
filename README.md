@@ -4,7 +4,7 @@
 
 ```docker images```
 
-```docker build -t sampleapp:latest .```
+```docker image build -t sampleapp:latest .```
 
 Get Docker Info 
 
