@@ -26,8 +26,8 @@ Get Docker Info
 
  kubectl get replicaset
 
-##### kubectl scale --replicas=1 deployment finance-ui-app-deployment
-##### kubectl apply -f deployments.yaml
+##### `kubectl scale --replicas=1 deployment finance-ui-app-deployment`
+##### `kubectl apply -f deployments.yaml`
 
  ### minikube command
 
