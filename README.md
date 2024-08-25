@@ -45,6 +45,9 @@ Get Docker Info
    By default external port will be pending you need to hit below command in seperate cmd to update
    `minikube tunnel`
 
+### Start Config Map Dashboard
+   `minikube dashboard`
+
  ### minikube command
 
  minikube start
