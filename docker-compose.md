@@ -11,3 +11,5 @@ or
 
 ```docker-compose -f mysql-compose.yml down```
 
+### Scale docker compose
+   `docker-compose up --scale petstore=3`
