@@ -33,4 +33,5 @@ Get Docker Info
 
  minikube start
 
+minikube service erps-redis-cache-service-svc
    
