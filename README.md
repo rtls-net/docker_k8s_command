@@ -29,6 +29,7 @@ Get Docker Info
 ##### `kubectl scale --replicas=1 deployment finance-ui-app-deployment`
 ##### `kubectl apply -f deployments.yaml`
 `kubectl describe deployments`
+`kubectl get deployment argo-server`
 
  ### minikube command
 
