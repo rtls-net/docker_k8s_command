@@ -34,6 +34,8 @@ Get Docker Info
  
  `kubectl describe deployment nginx-deployment`
 
+ `kubectl scale deployment/nginx-deployment --replicas=10`
+
  ### minikube command
 
  minikube start
