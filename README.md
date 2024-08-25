@@ -36,6 +36,11 @@ Get Docker Info
 
  `kubectl scale deployment/nginx-deployment --replicas=10`
 
+
+ ## LoadBalancer 
+   By default external port will be pending you need to hit below command in seperate cmd to update
+   `minikube tunnel`
+
  ### minikube command
 
  minikube start
