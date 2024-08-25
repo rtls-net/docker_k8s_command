@@ -34,4 +34,6 @@ Get Docker Info
  minikube start
 
 minikube service erps-redis-cache-service-svc
-   
+
+
+   kubectl logs erps-redis-cache-service-deployment-c55449bf8-rzsch
