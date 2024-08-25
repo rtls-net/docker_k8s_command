@@ -52,6 +52,8 @@ Get Docker Info
 
  minikube start
 
+ minikube start --driver=virtualbox
+
 minikube service erps-redis-cache-service-svc
 
 
