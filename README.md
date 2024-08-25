@@ -38,6 +38,10 @@ Get Docker Info
 
 
  ## LoadBalancer 
+
+  ### Enable ingress using below command 
+  `minikube addons enable ingress`
+  
    By default external port will be pending you need to hit below command in seperate cmd to update
    `minikube tunnel`
 
