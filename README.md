@@ -65,3 +65,10 @@ minikube service erps-redis-cache-service-svc
 
    ### Delete minikube
     minikube delete
+
+
+docker run -d -it <image_id>
+
+docker ps  show docker conatiner id
+
+docker exec -it <container_id> bash
