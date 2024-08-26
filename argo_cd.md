@@ -3,22 +3,22 @@
 ## We will start with launching minikube. There are several driver options that you can use to start a minikube cluster (virtualbox, docker, hyperv). I used docker as driver.
   `minikube start --driver=docker`
 
-  Just like other Kubernetes tools, ArgoCD requires a namespace with its name. Therefore, we will create a namespace for argocd.
-  kubectl create ns argocd
+  ## Just like other Kubernetes tools, ArgoCD requires a namespace with its name. Therefore, we will create a namespace for argocd.
+  `kubectl create ns argocd`
 
 
-  We will apply ArgoCD manifest installation file from ArgoCD github repository
+  ### We will apply ArgoCD manifest installation file from ArgoCD github repository
 
-kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/v2.5.8/manifests/install.yaml
+`kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/v2.5.8/manifests/install.yaml`
 
-Let’s verify the installation by getting all the objects in the ArgoCD namespace.
+### Let’s verify the installation by getting all the objects in the ArgoCD namespace.
 
-kubectl get all -n argocd
+`kubectl get all -n argocd`
 
-In order to access the web GUI of ArgoCD, we need to do a port forwarding. For that we will use the argocd-server service (But make sure that pods are in a running state before running this command).
-kubectl port-forward svc/argocd-server -n argocd 8080:443
+### In order to access the web GUI of ArgoCD, we need to do a port forwarding. For that we will use the argocd-server service (But make sure that pods are in a running state before running this command).
+`kubectl port-forward svc/argocd-server -n argocd 8080:443`
 
-Now we can go to a browser and open localhost:8080
+## Now we can go to a browser and open localhost:8080
 
 To use ArgoCD interface, we need to enter our credentials. The default username is admin so we can enter it immediately, but we will need to get the initial password from ArgoCD through minikube terminal.
 
@@ -96,3 +96,6 @@ Are you sure you want to enable automated self healing? OK
 
 
 We can also go to the nginx-deployment and check the events and logs to see how our application changed and healed.
+
+
+`https://medium.com/@mehmetodabashi/installing-argocd-on-minikube-and-deploying-a-test-application-caa68ec55fbf`
