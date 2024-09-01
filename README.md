@@ -66,6 +66,7 @@ minikube service erps-redis-cache-service-svc
    ### Delete minikube
     minikube delete
 
+   minikube start --nodes 2 -p multinode-demo
 
 docker run -d -it <image_id>
 
